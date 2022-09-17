@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 namespace BookStoresWebAPI.Models
 {
-    public partial class masterContext : DbContext
+    public partial class BookStoresDBContext : DbContext
     {
-        public masterContext()
+        public BookStoresDBContext()
         {
         }
 
-        public masterContext(DbContextOptions<masterContext> options)
+        public BookStoresDBContext(DbContextOptions<BookStoresDBContext> options)
             : base(options)
         {
         }
@@ -31,7 +31,7 @@ namespace BookStoresWebAPI.Models
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-1VBHUVG;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
+                optionsBuilder.UseSqlServer("Data Source=DESKTOP-1VBHUVG;Initial Catalog=BookStoresDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
             }
         }
 
@@ -134,7 +134,7 @@ namespace BookStoresWebAPI.Models
                 entity.HasOne(d => d.Pub)
                     .WithMany(p => p.Book)
                     .HasForeignKey(d => d.PubId)
-                    .HasConstraintName("FK__Book__pub_id__2C538F61");
+                    .HasConstraintName("FK__Book__pub_id__3E52440B");
             });
 
             modelBuilder.Entity<BookAuthor>(entity =>
@@ -152,12 +152,12 @@ namespace BookStoresWebAPI.Models
                 entity.HasOne(d => d.Author)
                     .WithMany(p => p.BookAuthor)
                     .HasForeignKey(d => d.AuthorId)
-                    .HasConstraintName("FK__BookAutho__autho__2D47B39A");
+                    .HasConstraintName("FK__BookAutho__autho__3F466844");
 
                 entity.HasOne(d => d.Book)
                     .WithMany(p => p.BookAuthor)
                     .HasForeignKey(d => d.BookId)
-                    .HasConstraintName("FK__BookAutho__book___2E3BD7D3");
+                    .HasConstraintName("FK__BookAutho__book___403A8C7D");
             });
 
             modelBuilder.Entity<Job>(entity =>
@@ -175,7 +175,7 @@ namespace BookStoresWebAPI.Models
             modelBuilder.Entity<Publisher>(entity =>
             {
                 entity.HasKey(e => e.PubId)
-                    .HasName("PK__Publishe__2515F222710BCDD2");
+                    .HasName("PK__Publishe__2515F222DD82FE76");
 
                 entity.Property(e => e.PubId).HasColumnName("pub_id");
 
@@ -223,7 +223,7 @@ namespace BookStoresWebAPI.Models
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.RefreshToken)
                     .HasForeignKey(d => d.UserId)
-                    .HasConstraintName("FK__RefreshTo__user___2F2FFC0C");
+                    .HasConstraintName("FK__RefreshTo__user___412EB0B6");
             });
 
             modelBuilder.Entity<Role>(entity =>
@@ -272,12 +272,12 @@ namespace BookStoresWebAPI.Models
                 entity.HasOne(d => d.Book)
                     .WithMany(p => p.Sale)
                     .HasForeignKey(d => d.BookId)
-                    .HasConstraintName("FK__Sale__book_id__30242045");
+                    .HasConstraintName("FK__Sale__book_id__4222D4EF");
 
                 entity.HasOne(d => d.Store)
                     .WithMany(p => p.Sale)
                     .HasForeignKey(d => d.StoreId)
-                    .HasConstraintName("FK__Sale__store_id__3118447E");
+                    .HasConstraintName("FK__Sale__store_id__4316F928");
             });
 
             modelBuilder.Entity<Store>(entity =>
@@ -374,12 +374,12 @@ namespace BookStoresWebAPI.Models
                 entity.HasOne(d => d.Pub)
                     .WithMany(p => p.User)
                     .HasForeignKey(d => d.PubId)
-                    .HasConstraintName("FK__User__pub_id__33008CF0");
+                    .HasConstraintName("FK__User__pub_id__44FF419A");
 
                 entity.HasOne(d => d.Role)
                     .WithMany(p => p.User)
                     .HasForeignKey(d => d.RoleId)
-                    .HasConstraintName("FK__User__role_id__320C68B7");
+                    .HasConstraintName("FK__User__role_id__440B1D61");
             });
 
             OnModelCreatingPartial(modelBuilder);

@@ -1,3 +1,8 @@
+C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\obj\Debug\netcoreapp3.1\BookStoresWebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\obj\Debug\netcoreapp3.1\BookStoresWebAPI.AssemblyInfoInputs.cache
+C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\obj\Debug\netcoreapp3.1\BookStoresWebAPI.AssemblyInfo.cs
+C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\obj\Debug\netcoreapp3.1\BookStoresWebAPI.csproj.CoreCompileInputs.cache
+C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\obj\Debug\netcoreapp3.1\BookStoresWebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\bin\Debug\netcoreapp3.1\BookStoresWebAPI.exe
@@ -24,12 +29,6 @@ C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\bin\Debug\netcoreapp3.1\runtimes
 C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\obj\Debug\netcoreapp3.1\BookStoresWebAPI.csproj.AssemblyReference.cache
-C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\obj\Debug\netcoreapp3.1\BookStoresWebAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\obj\Debug\netcoreapp3.1\BookStoresWebAPI.AssemblyInfoInputs.cache
-C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\obj\Debug\netcoreapp3.1\BookStoresWebAPI.AssemblyInfo.cs
-C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\obj\Debug\netcoreapp3.1\BookStoresWebAPI.csproj.CoreCompileInputs.cache
-C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\obj\Debug\netcoreapp3.1\BookStoresWebAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\BookStoresWebAPI.StaticWebAssets.Manifest.cache
 C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\obj\Debug\netcoreapp3.1\staticwebassets\BookStoresWebAPI.StaticWebAssets.xml
 C:\Users\cgao\Documents\GitHub\BookStoresWebAPI\obj\Debug\netcoreapp3.1\scopedcss\bundle\BookStoresWebAPI.styles.css
