@@ -7,7 +7,7 @@ namespace BookStoresWebAPI.Models
     {
         public User()
         {
-            RefreshToken = new HashSet<RefreshToken>();
+            RefreshTokens = new HashSet<RefreshToken>();
         }
 
         public int UserId { get; set; }
@@ -19,10 +19,12 @@ namespace BookStoresWebAPI.Models
         public string LastName { get; set; }
         public short RoleId { get; set; }
         public int PubId { get; set; }
+        //public int JobId { get; set; }
         public DateTime? HireDate { get; set; }
 
+        //public virtual Job  Job { get; set; }       
         public virtual Publisher Pub { get; set; }
         public virtual Role Role { get; set; }
-        public virtual ICollection<RefreshToken> RefreshToken { get; set; }
+        public virtual ICollection<RefreshToken> RefreshTokens { get; set; }
     }
 }
