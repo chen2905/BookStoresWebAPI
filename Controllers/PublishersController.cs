@@ -50,6 +50,67 @@ namespace BookStoresWebAPI.Controllers
             return publisher;
             }
 
+        // GET: api/Publishers/PostPublisherDetails
+        [HttpGet("PostPublisherDetails")]
+
+        public async Task<ActionResult<Publisher>> PostPublisherDetails()
+            {
+
+            var publisher = new Publisher();
+            publisher.PublisherName = "C&G Publisher";
+            publisher.City = "New York City";
+            publisher.State = "NY";
+            publisher.Country = "USA";
+
+            var book1 = new Book();
+            book1.Title = "God Is Great";
+            book1.PublishedDate = Convert.ToDateTime("2022-09-20");
+
+            var book2 = new Book();
+            book2.Title = "How To Pray To God";
+            book2.PublishedDate = Convert.ToDateTime("2022-09-21");
+
+            Sale sale1 = new Sale();
+            sale1.Quantity = 1;
+            sale1.StoreId = "6380";
+            sale1.OrderNum = "o1233";
+            sale1.PayTerms = "Net 30";
+            sale1.OrderDate = DateTime.Now;
+
+            Sale sale2 = new Sale();
+            sale2.Quantity = 2;
+            sale2.StoreId = "6380";
+            sale2.OrderNum = "o1233";
+            sale2.PayTerms = "Net 60";
+            sale2.OrderDate = DateTime.Now;
+            book1.Sales.Add(sale1);
+            book2.Sales.Add(sale2);
+
+
+            publisher.Books.Add(book1);
+            publisher.Books.Add(book2);
+
+
+
+            _context.Publishers.Add(publisher);
+            _context.SaveChanges();
+
+            var publishers = await _context.Publishers
+                                             .Include(pub => pub.Books)
+                                                .ThenInclude(book => book.Sales)
+                                             .Include(pub => pub.Users)
+                                               .Where(pub => pub.PubId == publisher.PubId)
+                                            .FirstOrDefaultAsync();
+
+            if (publishers == null)
+                {
+                return NotFound();
+                }
+
+            return publishers;
+            }
+
+
         // GET: api/Publishers/5
         [HttpGet("GetPublisher/{id}")]
 
