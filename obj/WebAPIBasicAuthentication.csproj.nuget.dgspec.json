@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cgao\\Documents\\GitHub\\webAPIAuth\\WebAPIBasicAuthentication\\BookStoresWebAPI.csproj": {}
+    "C:\\Users\\cgao\\Documents\\GitHub\\webAPIAuth\\WebAPIBasicAuthentication\\WebAPIBasicAuthentication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cgao\\Documents\\GitHub\\webAPIAuth\\WebAPIBasicAuthentication\\BookStoresWebAPI.csproj": {
+    "C:\\Users\\cgao\\Documents\\GitHub\\webAPIAuth\\WebAPIBasicAuthentication\\WebAPIBasicAuthentication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cgao\\Documents\\GitHub\\webAPIAuth\\WebAPIBasicAuthentication\\BookStoresWebAPI.csproj",
-        "projectName": "BookStoresWebAPI",
-        "projectPath": "C:\\Users\\cgao\\Documents\\GitHub\\webAPIAuth\\WebAPIBasicAuthentication\\BookStoresWebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\cgao\\Documents\\GitHub\\webAPIAuth\\WebAPIBasicAuthentication\\WebAPIBasicAuthentication.csproj",
+        "projectName": "WebAPIBasicAuthentication",
+        "projectPath": "C:\\Users\\cgao\\Documents\\GitHub\\webAPIAuth\\WebAPIBasicAuthentication\\WebAPIBasicAuthentication.csproj",
         "packagesPath": "C:\\Users\\cgao\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\cgao\\Documents\\GitHub\\webAPIAuth\\WebAPIBasicAuthentication\\obj\\",
         "projectStyle": "PackageReference",
